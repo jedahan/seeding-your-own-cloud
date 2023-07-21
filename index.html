@@ -1,174 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>seeding your own cloud</title>
+    <title>seeding your own cloud</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/moon.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/moon.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<footer><small><a href=https://jedahan.com/seeding-your-own-cloud.html>https://jedahan.com/seeding-your-own-cloud.html</a></small></footer>
-				<section>
-					<h1>seeding your own cloud</h1>
-				</section>
-				  
-				<section>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- TODO: CHANGE TO LOCAL IP ADDRESS -->
+        <footer>
+          <small>
+            <a href="https://jedahan.com/seeding-your-own-cloud.html"
+              >https://jedahan.com/seeding-your-own-cloud.html</a
+            >
+          </small>
+        </footer>
+        <section>
+          <h1>seeding your own cloud</h1>
+        </section>
 
-					<section> <aside class=notes> exercise: what do you expect coming here? </aside>
-					  <h1>expectations</h1>
-					</section>
-					<section> <aside class=notes> giving everyone some language, context, and questions to help make known some part of their unknown. to inspire personal growth if interested, and to protect from malice. </aside> 
-					  <h2>goals</h2>
-					</section>
+        <section>
+          <h6 style="float: left">section 1/4</h6>
+          <section>
+            <h1>expectations</h1>
+            <aside class="notes">
+              Hi my name is Jonathan (he/him) Exercise: What are your
+              expectations? - write your expectations on these post it notes -
+              we will then go around and have 1 delegate from each group share
+              with everyone
+            </aside>
+          </section>
+          <section>
+            <h1>goals</h1>
+            <aside class="notes">
+              would be unfair to just ask of you, so I will also share my goals
+              when making this workshop: - giving everyone some language,
+              context, and questions to help make known some part of their
+              unknown - inspire personal growth if interested - leave with more
+              tools to protect yourself from those who may cause harm (including
+              yourself)
+            </aside>
+          </section>
 
-					<section>
-						<h1>intros</h1>
-						<aside class=notes>some qualifications and context</aside>
-					
-						<h3>personal history</h3>
-						<aside class=notes>
-							<p>developer for 20 years </p>
-							<p>mostly iot, interactive installations, device-to-web</p>
-							<p>alternative network topoligies</p>
-							<p>taught in lots of different contexts</p>
-							<p>sfpc, itp camp, nyc resistor, woodbine basement, recurse center</p>
-						</aside>
-						
-						<h3>projects</h3>
-						<p> <a href="jedahan.com/baculus">baculus</a>
-						<p> <a href="nycmesh.net">nyc mesh</a>
-					</section>
+          <section>
+            <h1>intros</h1>
+            <aside class="notes">some qualifications and context</aside>
 
-					<section>
-						<h1>logistics</h1>
-						<aside class=notes> 
-							<p>Please interrupt with questions.</p>
-							<p>I will provide some index cards - please flip them to express a need - ok, break, lost</p>
-							<p>bathrooms are there</p>
-							<p>wifi is over there</p>
-						</aside>
-					</section>
+            <h3>personal history</h3>
+            <aside class="notes">
+              <p>developer for 20 years</p>
+              <p>
+                mostly iot, interactive installations, device-to-web, unusual
+                interfaces beyond just touchscreens
+              </p>
+              <p>alternative network topologies</p>
+              <p>taught in lots of different contexts</p>
+              <p>
+                sfpc, itp camp, nyc resistor, woodbine basement, recurse center
+              </p>
+            </aside>
 
-					<section> <aside class=notes>there are four sections, each with a break or exercise</aside>
-						<h1>planning</h1>
+            <h3>relevant-ish projects</h3>
+            <p><a href="jedahan.com/baculus">baculus</a></p>
+            <p><a href="nycmesh.net">nyc mesh</a></p>
+          </section>
 
-							<p><code>&lt;header&gt;<span class=fragment><b>titles and metadata</b></span>&lt;/header&gt</code></p>
-							<p><code>&lt;body&gt;<span class=fragment>envisioning to embodiment</span>&lt;/body&gt</code></p>
-							<p><code>&lt;script&gt;<span class=fragment>wading through the mud</span>&lt;/script&gt</code></p>
-							<p><code>&lt;footer&gt;<span class=fragment>followups</span>&lt;/footer&gt</code></p>
-					</section>
-				</section>
+          <section>
+            <h1>logistics</h1>
+            <aside class="notes">
+              <p>Please interrupt with questions.</p>
+              <p>
+                I will provide some index cards - please flip them to express a
+                need - ok, break, lost
+              </p>
+              <p>bathrooms are there</p>
+              <p>wifi is over there</p>
+            </aside>
+          </section>
 
-				<!-- <section> <aside class=notes>there are four sections, each with a break or exercise</aside>
-					<h1>planning</h1>
+          <section>
+            <aside class="notes">
+              there are four sections, each with a break or exercise
+            </aside>
+            <h1>planning</h1>
+            <p class="fragment">
+              metadata
+              <span class="fragment" data-fragment-index="5"
+                ><- we are here</span
+              >
+            </p>
+            <p class="fragment">envisioning to embodiment</p>
+            <p class="fragment">wading through the mud</p>
+            <p class="fragment">followups</p>
+          </section>
 
-					<section>
-						<p><code>&lt;header&gt;<span class=fragment>titles and metadata</span>&lt;/header&gt</code></p>
-						<p><code>&lt;body&gt;<span class=fragment>envisioning to embodiment</span>&lt;/body&gt</code></p>
-						<p><code>&lt;script&gt;<span class=fragment>wading through the mud</span>&lt;/script&gt</code></p>
-						<p><code>&lt;footer&gt;<span class=fragment>followups</span>&lt;/footer&gt</code></p>
-						</section>
-					<section>
+          <section>
+            <aside class="notes">
+              <p>
+                when learning a lot of new things, its hard to figure out where
+                an issue is.
+              </p>
+              <p>is it with outdated documentation?</p>
+              <p>personal misunderstanding of what something does?</p>
+              <p>bug with the project?</p>
+              <p>something specific to your computer?</p>
+              <p>something specific to your network?</p>
+            </aside>
 
-					<section> <aside class=notes>prep for the day</aside>
-						<code>&lt;header&gt;titles and metadata&lt;/header&gt</code>
-						
-						<p class=fragment> expectations
-						<p class=fragment> introductions
-						<p class=fragment> logistics
-						<p class=fragment> <b>planning</b>
-						<p class=fragment> what is the web?
-					</section>
-				  
-					<section>  <aside class=notes>how to learn, how the internet started, lets share some sites </aside>
-						<code>&lt;body&gt;envisioning to embodiment&lt;/body&gt;</code>
+            <h1>learning philosophy</h1>
+            <p class="fragment">half energy spent locating the issue</p>
+            <p class="fragment">
+              <span style="color: red">error messages</span> are blameful
+            </p>
+            <p class="fragment">
+              network layers are coordinated by lower layers
+            </p>
+          </section>
+        </section>
 
-						<p class=fragment> learning approach </p>
-						<p class=fragment> history </p>
-						<p class=fragment> dns exercise </p>
-					</section>
-				</section> -->
-				  
-				<section>
-					<code><p>&lt;script&gt;wading through the mud&lt;/script&gt;</p></code>
-					<p class="fragment"> what is a server
-					<p class="fragment"> running nginx
-						<aside class="notes">software and trust - nginx i have trust in, but should we trace that trust</aside>
-					<p class="fragment"> how do computers communicate?
-					<aside class="notes">ip or internet protocol. protocols are somewhat strict "languages" that people agree to use.</aside>
-					<p class="fragment"> network topologies
-					<p class="fragment"> addresses, packets, protocols
-					
-				</section>
-				
-				<section>
-					<code>&lt;footer&gt;followups&lt;/footer&gt;</code>
-					<ul>
-					  <li> inspiration
-					  <li> selfhosting
-					</ul>
-				  </section>
-				</section>
-				  
-				  
-				  
-				  <section>
-					<h1>what happens when you visit a website?</h1>
-					<aside class=notes> how do you visit sites? </aside>
-					<aside class=notes> where do you find links? what is a link? </aside>
-					<aside class=notes> hyper media </aside>
-					<ul>
-					  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"> according to mozilla</a>
-					  <li><a href="https://github.com/vasanthk/how-web-works">according to Vasa</a>
-					  <li>according to us
-				  </section>
-				  
-				  <section>
-				  <h1>learning philosophy</h1>
-				  </section>
-				  
-				  <section>
-					<h1>history & privilege</h1>
-				  
-					<aside class=notes>
-					  <ul>
-						<li> physical
-						<li> military
-						<li> personal
-					</aside>
-				  </section>
-				  
-				  
-				  <section>
-					<h1>inspiration & next steps</h1>
-				  </section>
-				  
-			</div>
-		</div>
+        <section>
+          <h6 style="float: left">2/4 .script</h6>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+          <section>
+            <aside class="notes">
+              how did this all start? (an incorrect history of the internet
+              abridged) arpanet, darpa, universities minitel - france alohanet
+              and university of hawaii ingrid burrington networks of new york
+              (anything in navy yard?)
+            </aside>
+            <h2>how did this all start?</h2>
+            <p class="fragment fade-in-then-semi-out">arpanet</p>
+            <p class="fragment fade-in-then-semi-out">minitel</p>
+            <p class="fragment fade-in-then-semi-out">alohanet</p>
+            <p class="fragment fade-in-then-semi-out">field guides</p>
+          </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+          <section>
+            <h1>what happens when you visit a website?</h1>
+            <aside class="notes">
+              how do you visit sites? where do you find links? what is a link?
+              hyper media
+            </aside>
+
+            <p class="fragment">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"
+              >
+                according to mozilla</a
+              >
+            </p>
+            <p class="fragment">
+              <a href="https://github.com/vasanthk/how-web-works"
+                >according to Vasa</a
+              >
+            </p>
+            <p class="fragment">according to us</p>
+          </section>
+
+          <!-- to add
+							what is a client? (what is a user agent?)
+								- client is software that asks another computer for something
+								- web browser (firefox, internet explorer, safari)
+	
+							user agents, and distinction between client-server terminology
+								- (finger) (daemons)
+								- web crawlers - spiders - world wide web
+	
+							dns exercise?
+								- get other peoples ip address, and visit their websites
+								- root name server wikipedia article
+								- layers of abstraction re: AS numbers and IP addresses
+					</section> -->
+
+          <section>
+            <h1>what is a server?</h1>
+            <p class="fragment">what is the cloud?</p>
+
+            <aside class="notes">
+              - what is a server? - its just some software running on a computer
+              - its also what people will call a computer, if server software
+              its main program - web server (http) - (apache, nginx, caddy) -
+              what is the cloud - its a type of business, where you pay someone
+              else to take care of your (hardware) servers
+            </aside>
+          </section>
+
+          <section>
+            <h1>running nginx</h1>
+            <aside class="notes">
+              windows - follow website. unzip, run, open file in vscode macos -
+              install homebrew from brew.sh, then brew install nginx - windows -
+              follow website? - macos - follow brew.sh then brew install nginx,
+              brew services start nginx open /opt/homebrew/var/www
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <h6 style="float: left">3/4 .body</h6>
+          <section>
+            <aside class="notes">
+              software and trust - nginx i have trust in, but should we trace
+              that trust
+            </aside>
+            <p class="fragment">how do computers communicate?</p>
+            <aside class="notes">
+              ip or internet protocol. protocols are somewhat strict "languages"
+              that people agree to use.
+            </aside>
+            <p class="fragment">network topologies</p>
+            <p class="fragment">addresses, packets, protocols</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h6 style="float: left">4/4 .footer</h6>
+            <section>
+              <h1>understanding</h1>
+              <p>
+                history - how to wreck a nice beach - funk
+                music/encryption/vocoders
+              </p>
+              <p>
+                ingrid burrington networks of new york (anything in navy yard?)
+              </p>
+            </section>
+            <section>
+              <h1>doing</h1>
+              <p>sfpc!</p>
+              <p>nyc resistor</p>
+              <p>charles' petzold's code</p>
+            </section>
+            <section>
+              <h1>selfhosting</h1>
+              <p>low tech lab</p>
+              <p>100r</p>
+              <p>awesome selfhosted</p>
+              <p>awesome startpages</p>
+            </section>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
