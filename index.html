@@ -12,25 +12,32 @@
   <link rel="stylesheet" href="dist/theme/moon.css" />
 
   <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  <style>
+    .section-title {
+      opacity: 70%;
+      float: left;
+    }
+  </style>
 </head>
 
 <body>
   <div class="reveal">
+    <footer style="position: absolute; bottom: 10px; left: 10px; opacity: 70%">
+      <small>
+        <!-- TODO: CHANGE TO LOCAL IP ADDRESS -->
+        <a href="https://jedahan.com/seeding-your-own-cloud.html">
+          https://jedahan.com/seeding-your-own-cloud.html
+        </a>
+      </small>
+    </footer>
     <div class="slides">
-      <footer style="float: right; opacity: 50%">
-        <small>
-          <!-- TODO: CHANGE TO LOCAL IP ADDRESS -->
-          <a href="https://jedahan.com/seeding-your-own-cloud.html">
-            https://jedahan.com/seeding-your-own-cloud.html
-          </a>
-        </small>
-      </footer>
+
       <section>
         <h1>seeding your own cloud</h1>
       </section>
 
       <section>
-        <h6 style="float: left">section 1/4</h6>
+        <h6 class=section-title>section 1/4</h6>
         <section>
           <h1>expectations</h1>
           <aside class="notes">
@@ -128,7 +135,7 @@
       </section>
 
       <section>
-        <h6 style="float: left">2/4 .script</h6>
+        <h6 class=section-title>2/4 .script</h6>
 
         <section>
           <aside class="notes">
@@ -195,57 +202,95 @@
         <section>
           <h1>running nginx</h1>
           <aside class="notes">
-            windows - follow website. unzip, run, open file in vscode macos -
-            install homebrew from brew.sh, then brew install nginx - windows -
-            follow website? - macos - follow brew.sh then brew install nginx,
-            brew services start nginx open /opt/homebrew/var/www
+            <ul>
+              <h3>windows</h3>
+              <p>follow website. unzip, run, open file in vscode </p>
+              <h3>macos</h3>
+              <p>install homebrew from brew.sh, then brew install nginx</p>
+              <p>brew services start nginx open /opt/homebrew/var/www</p>
+              <p>127.0.0.1</p>
+            </ul>
           </aside>
+          <p class=fragment>download</p>
+          <p class=fragment>install</p>
+          <p class=fragment>configure</p>
+          <p class=fragment>test</p>
+          <p class=fragment>share</p>
         </section>
       </section>
 
       <section>
-        <h6 style="float: left">3/4 .body</h6>
+        <h6 class=section-title>3/4 .body</h6>
         <section>
+          <h1>html crash course!</h1>
           <aside class="notes">
-            software and trust - nginx i have trust in, but should we trace
-            that trust
+            <p>only covering a few tags</p>
+            <p>customize your site</p>
+            <p>theres a workshop on this!</p>
+            <p>glitch.me, vscode, notepad++</p>
           </aside>
-          <p class="fragment">how do computers communicate?</p>
+          <p class=fragment>tags</p>
+          <p class=fragment>img</p>
+          <p class=fragment>editer versus viewer</p>
+          <p class=fragment>winding diatribe about user agents & daemons</p>
+        </section>
+
+        <section>
+          <h1>visit each other's websites!</h1>
           <aside class="notes">
-            ip or internet protocol. protocols are somewhat strict "languages"
-            that people agree to use.
+            <p>exercise time!</p>
+            <p>we are going to DO before understanding!</p>
+            <p>find each others websites</p>
+            <p>windows - search for 'ip address'</p>
+            <p>mac - alt-click the wifi icon</p>
+            <p>at this point, you probable have an address book</p>
           </aside>
-          <p class="fragment">network topologies</p>
-          <p class="fragment">addresses, packets, protocols</p>
+          <p class=fragment>find your ip address</p>
+          <p class=fragment>what is local?</p>
+          <p class=fragment>why ports?</p>
+        </section>
+
+        <section>
+          <h1>how do computers communicate?</h1>
+          <aside class="notes">
+            <p>there are many layers. we are starting with some of the middle-ish layers - IP and DNS</p>
+            <p>ip or internet protocol. protocols are somewhat strict "languages" that people agree to use.</p>
+          </aside>
+          <p class=fragment>so many layers</p>
+          <p class=fragment>internet protocol</p>
+          <p class=fragment>domain name system</p>
+          <p class=fragment>packets</p>
+          <p class=fragment>alternative topologies</p>
         </section>
       </section>
 
       <section>
+        <h6 class=section-title>4/4 .footer</h6>
         <section>
-          <h6 style="float: left">4/4 .footer</h6>
-          <section>
-            <h1>understanding</h1>
-            <p>
-              history - how to wreck a nice beach - funk
-              music/encryption/vocoders
-            </p>
-            <p>
-              ingrid burrington networks of new york (anything in navy yard?)
-            </p>
-          </section>
-          <section>
-            <h1>doing</h1>
-            <p>sfpc!</p>
-            <p>nyc resistor</p>
-            <p>charles' petzold's code</p>
-          </section>
-          <section>
-            <h1>selfhosting</h1>
-            <p>low tech lab</p>
-            <p>100r</p>
-            <p>awesome selfhosted</p>
-            <p>awesome startpages</p>
-          </section>
+          <h1>understanding</h1>
+          <p>
+            history - how to wreck a nice beach - funk
+            music/encryption/vocoders
+          </p>
+          <p>
+            reflections on trusting trust by ken thompson
+          </p>
+          <p>
+            ingrid burrington networks of new york (anything in navy yard?)
+          </p>
+        </section>
+        <section>
+          <h1>doing</h1>
+          <p>sfpc!</p>
+          <p>nyc resistor</p>
+          <p>charles' petzold's code</p>
+        </section>
+        <section>
+          <h1>selfhosting</h1>
+          <p>low tech lab</p>
+          <p>100r</p>
+          <p>awesome selfhosted</p>
+          <p>awesome startpages</p>
         </section>
       </section>
     </div>
