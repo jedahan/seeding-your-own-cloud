@@ -9,20 +9,22 @@
 
   <link rel="stylesheet" href="dist/reset.css" />
   <link rel="stylesheet" href="dist/reveal.css" />
-  <link rel="stylesheet" href="dist/theme/moon.css" />
+  <link rel="stylesheet" href="dist/theme/serif.css" />
 
   <link rel="stylesheet" href="plugin/highlight/monokai.css" />
   <style>
-    .section-title {
+    footer {
       opacity: 70%;
-      float: left;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
     }
   </style>
 </head>
 
 <body>
   <div class="reveal">
-    <footer style="position: absolute; bottom: 10px; left: 10px; opacity: 70%">
+    <footer>
       <small>
         <!-- TODO: CHANGE TO LOCAL IP ADDRESS -->
         <a href="https://jedahan.com/seeding-your-own-cloud.html">
@@ -30,16 +32,15 @@
         </a>
       </small>
     </footer>
+    
     <div class="slides">
-
       <section>
-        <h1>seeding your own cloud</h1>
+        <h2>seeding your own cloud</h2>
       </section>
 
       <section>
-        <h6 class=section-title>section 1/4</h6>
         <section>
-          <h1>expectations</h1>
+          <h2>expectations</h2>
           <aside class="notes">
             Hi my name is Jonathan (he/him) Exercise: What are your
             expectations? - write your expectations on these post it notes -
@@ -48,7 +49,7 @@
           </aside>
         </section>
         <section>
-          <h1>goals</h1>
+          <h2>goals</h2>
           <aside class="notes">
             would be unfair to just ask of you, so I will also share my goals
             when making this workshop: - giving everyone some language,
@@ -60,7 +61,7 @@
         </section>
 
         <section>
-          <h1>intros</h1>
+          <h2>intros</h2>
           <aside class="notes">some qualifications and context</aside>
 
           <h3>personal history</h3>
@@ -83,7 +84,7 @@
         </section>
 
         <section>
-          <h1>logistics</h1>
+          <h2>logistics</h2>
           <aside class="notes">
             <p>Please interrupt with questions.</p>
             <p>
@@ -99,7 +100,7 @@
           <aside class="notes">
             there are four sections, each with a break or exercise
           </aside>
-          <h1>planning</h1>
+          <h2>planning</h2>
           <p class="fragment">
             metadata
             <span class="fragment" data-fragment-index="5">
@@ -123,7 +124,7 @@
             <p>something specific to your network?</p>
           </aside>
 
-          <h1>learning philosophy</h1>
+          <h2>learning philosophy</h2>
           <p class="fragment">half energy spent locating the issue</p>
           <p class="fragment">
             <span style="color: red">error messages</span> are blameful
@@ -135,8 +136,7 @@
       </section>
 
       <section>
-        <h6 class=section-title>2/4 .script</h6>
-
+        <section class=title> metadata </section>
         <section>
           <aside class="notes">
             how did this all start? (an incorrect history of the internet
@@ -144,7 +144,7 @@
             and university of hawaii ingrid burrington networks of new york
             (anything in navy yard?)
           </aside>
-          <h1>how did this all start?</h1>
+          <h2>how did this all start?</h2>
           <p class="fragment fade-in-then-semi-out">arpanet</p>
           <p class="fragment fade-in-then-semi-out">minitel</p>
           <p class="fragment fade-in-then-semi-out">alohanet</p>
@@ -152,7 +152,7 @@
         </section>
 
         <section>
-          <h1>what happens when you visit a website?</h1>
+          <h2>what happens when you visit a website?</h2>
           <aside class="notes">
             how do you visit sites? where do you find links? what is a link?
             hyper media
@@ -171,23 +171,8 @@
           <p class="fragment">according to us</p>
         </section>
 
-        <!-- to add
-					what is a client? (what is a user agent?)
-						- client is software that asks another computer for something
-						- web browser (firefox, internet explorer, safari)
-
-					user agents, and distinction between client-server terminology
-						- (finger) (daemons)
-						- web crawlers - spiders - world wide web
-
-					dns exercise?
-						- get other peoples ip address, and visit their websites
-						- root name server wikipedia article
-						- layers of abstraction re: AS numbers and IP addresses
-			</section> -->
-
         <section>
-          <h1>what is a server?</h1>
+          <h2>what is a server?</h2>
           <p class="fragment">what is the cloud?</p>
 
           <aside class="notes">
@@ -200,7 +185,7 @@
         </section>
 
         <section>
-          <h1>running nginx</h1>
+          <h2>running nginx</h2>
           <aside class="notes">
             <ul>
               <h3>windows</h3>
@@ -220,9 +205,9 @@
       </section>
 
       <section>
-        <h6 class=section-title>3/4 .body</h6>
+        <section class=title> em body ment </section>
         <section>
-          <h1>html crash course!</h1>
+          <h2>html crash course!</h2>
           <aside class="notes">
             <p>only covering a few tags</p>
             <p>customize your site</p>
@@ -236,7 +221,7 @@
         </section>
 
         <section>
-          <h1>visit each other's websites!</h1>
+          <h2>visit each other's websites!</h2>
           <aside class="notes">
             <p>exercise time!</p>
             <p>we are going to DO before understanding!</p>
@@ -251,7 +236,7 @@
         </section>
 
         <section>
-          <h1>how do computers communicate?</h1>
+          <h2>how do computers communicate?</h2>
           <aside class="notes">
             <p>there are many layers. we are starting with some of the middle-ish layers - IP and DNS</p>
             <p>ip or internet protocol. protocols are somewhat strict "languages" that people agree to use.</p>
@@ -265,9 +250,9 @@
       </section>
 
       <section>
-        <h6 class=section-title>4/4 .footer</h6>
+        <section>followup</section>
         <section>
-          <h1>understanding</h1>
+          <h2>information</h2>
           <p>
             history - how to wreck a nice beach - funk
             music/encryption/vocoders
@@ -280,13 +265,43 @@
           </p>
         </section>
         <section>
-          <h1>doing</h1>
+          <h2>clients and user agents</h2>
+					<aside class=notes>
+						- client is software that asks another computer for something
+						- web browser (firefox, internet explorer, safari)
+          </aside>
+          <p class="fragment">client</p>
+          <p class="fragment">user agent</p>
+          <p class="fragment" style="color: red">daemon</p>
+          <p class="fragment">finger</p>
+          <p class="fragment">crawlers</p>
+        </section>
+        <section>
+          <h2>clients and user agents</h2>
+					<aside class=notes>
+						- client is software that asks another computer for something
+						- web browser (firefox, internet explorer, safari)
+          </aside>
+        </section>
+					user agents, and distinction between client-server terminology
+						- (finger) (daemons)
+						- web crawlers - spiders - world wide web
+
+					dns exercise?
+						- get other peoples ip address, and visit their websites
+						- root name server wikipedia article
+						- layers of abstraction re: AS numbers and IP addresses
+			</section> -->
+
+        </section>
+        <section>
+          <h2>doing</h2>
           <p>sfpc!</p>
           <p>nyc resistor</p>
           <p>charles' petzold's code</p>
         </section>
         <section>
-          <h1>selfhosting</h1>
+          <h2>selfhosting</h2>
           <p>low tech lab</p>
           <p>100r</p>
           <p>awesome selfhosted</p>
@@ -303,6 +318,7 @@
   <script>
     Reveal.initialize({
       hash: true,
+      slideNumber: true,
       plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
     });
   </script>
